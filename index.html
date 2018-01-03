@@ -16,6 +16,10 @@
       background-color: pink;
       padding: 25px;
     }
+
+    .container-fluid{
+      background: skyblue;
+    }
   </style>
 </head>
 <body>
@@ -28,7 +32,7 @@
   <div class="container text-center">
     <h1>Crystal Collector </h1>  
     <p>Pick a crystal to add to your score!</p>
-    <p> You win if your score matches random score</p>    
+    <p> You win if your score matches random number</p>    
   </div>
 </div>
 
@@ -36,7 +40,7 @@
 
 
 <div class="container-fluid bg-3 text-center">   
-  <h2 id = "random" >Random Number: </h2> 
+  <h2 >Random Number:<span id = "random"></span> </h2> 
   <div class="row">
     <div class="col-sm-3">
       <p>Crystal</p>
@@ -58,6 +62,7 @@
 </div><br><br>
 
 <footer class="container-fluid text-center">
+  <h3 id = "YourScore">Your Score:</h3>
   <p>2017</p>
 </footer>
 
