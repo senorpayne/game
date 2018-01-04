@@ -8,8 +8,21 @@ $(document).ready(function()
 alert("yes");})
 
 
+$("#two").on("click",function(){
+ var rand = Math.floor(Math.random()*58)+1;
+ $("#yourScore").text(rand);
+alert("yes");})
 
 
+$("#three").on("click",function(){
+ var rand = Math.floor(Math.random()*15)+1;
+ $("#yourScore").text(rand);
+alert("yes");})
+
+$("#four").on("click",function(){
+ var rand = Math.floor(Math.random()*25)+1;
+ $("#yourScore").text(rand);
+alert("yes");})
 
 
 
