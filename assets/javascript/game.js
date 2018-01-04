@@ -2,12 +2,12 @@
 $(document).ready(function()
 
 
-{$("p").on("click",function(){
-
+{$("#one").on("click",function(){
+$("#one").val(4)
 alert("yes");})
 
 var newDiv = $("<div>");
-newDiv.text("test");
+newDiv.text("Good Luck!");
 $(".jumbotron").append(newDiv);
 
 
