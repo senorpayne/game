@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <script type ="text/javascript" src= "assets/javascript/game.js"></script>
+  <script src= "assets/javascript/game.js"></script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
@@ -30,6 +30,19 @@
       background: skyblue;font-family: 'Armata';
     }
   </style>
+
+<script type="text/javascript">
+var randomNumber = Math.floor(Math.random() * 120) +19;
+
+
+
+
+</script>
+
+
+$("#random").text(randomNumber);
+
+
 </head>
 <body>
 
@@ -53,25 +66,25 @@
   <div class="row">
     <div class="col-sm-3">
       <p>Crystal</p>
-      <img id = "one" src="assets/images/crystal-cube_23-2147503620.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <img id = "#one" src="assets/images/crystal-cube_23-2147503620.jpg" class="img-responsive" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-3"> 
       <p>Crystal</p>
-      <img src="assets/images/crystal-cube_23-2147503620.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <img id = "one" src="assets/images/crystal-cube_23-2147503620.jpg" class="img-responsive" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-3"> 
       <p>Crystal..</p>
-      <img src="assets/images/crystal-cube_23-2147503620.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <img id = "one" src="assets/images/crystal-cube_23-2147503620.jpg" class="img-responsive" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-3">
       <p>Crystal..</p>
-      <img src="assets/images/crystal-cube_23-2147503620.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <img id = "one" src="assets/images/crystal-cube_23-2147503620.jpg" class="img-responsive" style="width:100%" alt="Image">
     </div>
   </div>
 </div><br><br>
 
 <footer class="container-fluid text-center">
-  <h3 id = "YourScore">Your Score:</h3>
+  <h3 >Your Score: <span id = "yourScore"></span> </h3>
   <p>2017</p>
 </footer>
 

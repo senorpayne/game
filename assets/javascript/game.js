@@ -2,9 +2,16 @@
 $(document).ready(function()
 
 
-{$("img").on("click",function(){
+{$("p").on("click",function(){
 
-alert("yes");});}
+alert("yes");})
+
+var newDiv = $("<div>");
+newDiv.text("test");
+$(".jumbotron").append(newDiv);
+
+
+
 
 
 var randomNumber = Math.floor(Math.random() * 120) +19;
@@ -12,9 +19,13 @@ var randomNumber = Math.floor(Math.random() * 120) +19;
 
 $("#random").text(randomNumber);
 
-var test = confirm("hi");
-alert(test);
-$("#one").on("click",function(){alert("test");})
+console.log("You won!");   
+
+
+
+var yourScore = "imageTotal";
+
+});
 
 
 
