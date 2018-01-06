@@ -38,7 +38,7 @@ $("#four").on("click",function(){
 
 
 var newDiv = $("<div>");
-newDiv.text("Good Luck!");
+newDiv.text("Good Luck!" );
 $(".jumbotron").append(newDiv);
 
 
@@ -52,19 +52,39 @@ $("#random").text(randomNumber);
 function scorecheck(){
 
     if ( score > randomNumber)
+    
     alert("Game Over! Please Refresh and try again");
-    losses++
+    losses++;
+    
 
     if (score === randomNumber)
     alert("You Win. You have great luck!");
+    win++;
 
 }
+newGame();
+win();
 
 function win(){
-
-    
+       console.log(wins); 
+wins++;
 }
-console.log("You won!");   
+
+function losses(){
+losses++;
+console.log(losses); 
+
+}
+
+function newGame(){
+    $("#yourScore").empty();
+
+
+
+}
+
+ 
+
 
 
 
