@@ -1,38 +1,43 @@
 
-$(document).ready(function()
+var score = 0;
+var target =0;
+var wins = 0;
+var losses = 0;
 
+$(document).ready(function()
+ 
 
 {$("#one").on("click",function(){
- var rand = Math.floor(Math.random()*4)+1;
- $("#yourScore").text(rand);
+ var rand0 = Math.floor(Math.random()*12)+1;
+ score+=rand0; 
+ $("#yourScore").text(score);
+
 alert("yes");})
 
 
 $("#two").on("click",function(){
- var rand = Math.floor(Math.random()*58)+1;
- $("#yourScore").text(rand);
+ var rand1 = Math.floor(Math.random()*12)+1;
+ score+=rand1; 
+ $("#yourScore").text(score);
 alert("yes");})
 
 
 $("#three").on("click",function(){
- var rand = Math.floor(Math.random()*15)+1;
- $("#yourScore").text(rand);
+ var rand2 = Math.floor(Math.random()*12)+1;
+ score+=rand2;
+ $("#yourScore").text(score);
 alert("yes");})
 
 $("#four").on("click",function(){
- var rand = Math.floor(Math.random()*25)+1;
- $("#yourScore").text(rand);
+ var rand3 = Math.floor(Math.random()*12)+1;
+ score+=rand3;
+ $("#yourScore").text(score);
 alert("yes");})
-
-
 
 
 var newDiv = $("<div>");
 newDiv.text("Good Luck!");
 $(".jumbotron").append(newDiv);
-
-
-
 
 
 
@@ -45,7 +50,10 @@ console.log("You won!");
 
 
 
-var yourScore = "imageTotal";
+
+
+
+
 
 });
 
