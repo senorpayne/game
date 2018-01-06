@@ -60,9 +60,9 @@ function scorecheck(){
     if (score === randomNumber)
     alert("You Win. You have great luck!");
     win++;
-
+    
 }
-newGame();
+
 win();
 
 function win(){
@@ -77,7 +77,7 @@ console.log(losses);
 }
 
 function newGame(){
-    $("#yourScore").empty();
+    $("#yourScore").empty(score);
 
 
 
